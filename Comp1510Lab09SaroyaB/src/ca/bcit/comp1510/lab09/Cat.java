@@ -29,13 +29,13 @@ public class Cat {
     }
 
 
-    public String getName() {
+    public String getName() { 
         return name;
     }
 
 
   
     public String toString() {
-        return "Cat name: " + name + "Cat= age:" + age;
+        return "Cat name: " + name + " Cat= age:" + age;
     }
 }

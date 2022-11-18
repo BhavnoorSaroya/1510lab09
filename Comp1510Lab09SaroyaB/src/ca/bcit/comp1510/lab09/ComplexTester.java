@@ -103,12 +103,14 @@ public class ComplexTester {
                + "\nexp(log(" + z1 + ")) = " + z1.log().exp()
                + "\nlog(exp(" + z1 + ")) = " + z1.exp().log()
                + "\nexp(" + z2 + ") = " + z2.exp()
-               + "\nlog(" + z2 + ") = " + z2.log()
+               + "\nlog(" + z2 + ") = " + z2.log() 
                + "\nexp(log(" + z2 + ")) = " + z2.log().exp()
                + "\nlog(exp(" + z2 + ")) = " + z2.exp().log()
                + "\nexp(πi) + 1 = " + πi.exp().add(Complex.ONE)
 
+
         );
+      
     }
 }
 
