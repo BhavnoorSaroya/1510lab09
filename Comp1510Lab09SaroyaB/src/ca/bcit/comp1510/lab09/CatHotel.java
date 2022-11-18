@@ -39,11 +39,14 @@ public class CatHotel {
     public int removeOldGuests(int age) {
         int catsRemoved = 0;
         Iterator<Cat> catIterator = cats.iterator();
+        
+        
+        
         while (catIterator.hasNext()) {
             Cat temp = catIterator.next();
             
-            if (temp.getAge() >= age){
-                cats.remove(temp);
+            if (temp.getAge() > age){
+                catIterator.remove();
                 catsRemoved++;
             }
         }
@@ -54,7 +57,9 @@ public class CatHotel {
     public void printGuestList() {
         System.out.println(hotelName);
         for (Cat i : cats) {
-            i.toString();
+            System.out.println(i.toString());
+            
+            
         }
     }
 }
